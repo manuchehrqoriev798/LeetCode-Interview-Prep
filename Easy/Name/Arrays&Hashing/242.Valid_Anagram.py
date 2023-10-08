@@ -1,17 +1,28 @@
+# class Solution:
+#     def isAnagram(self, s: str, t: str) -> bool:
+#         if len(s) != len(t):
+#             return False
+#         char_count_s = {}
+#         char_count_t = {}
+        
+#         for char in s:
+#             char_count_s[char] = char_count_s.get(char, 0) + 1
+        
+#         for char in t:
+#             char_count_t[char] = char_count_t.get(char, 0) + 1
+        
+#         return char_count_s == char_count_t
+
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
-        if len(s) != len(t):
+        sorted_s = sorted(s)
+        sorted_t = sorted(t)
+        if sorted_s == sorted_t:
+            return True
+        else: 
             return False
-        char_count_s = {}
-        char_count_t = {}
-        
-        for char in s:
-            char_count_s[char] = char_count_s.get(char, 0) + 1
-        
-        for char in t:
-            char_count_t[char] = char_count_t.get(char, 0) + 1
-        
-        return char_count_s == char_count_t
+
+
 
             
 # Create an instance of the Solution class
