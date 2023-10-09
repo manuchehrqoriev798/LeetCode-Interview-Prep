@@ -11,11 +11,26 @@ class Solution:
 nums = [2, 7, 11, 15]
 target = 9
 
-# Create an instance of the Solution class
 solution = Solution()
 
-# Call the twoSum function with the provided input
 result = solution.twoSum(nums, target)
 
-# Print the result
 print(result)
+
+
+
+
+
+# target = int(input())
+# num_list = [1, 2, 3, 4, 1, 1, 1, 1, 65, 76, 87, 87, 98, 8]
+# my_dict = {}  
+# result = []
+
+# for index, element in enumerate(num_list):
+#     # my_dict[index] = element
+#     pair = target - element
+#     if pair in my_dict:
+#         result.append((my_dict[pair], index))
+#     my_dict[element] = index
+
+# print(result)
