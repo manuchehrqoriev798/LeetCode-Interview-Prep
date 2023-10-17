@@ -33,16 +33,31 @@
 #     sum(num)
 
 
-t = int(input())
-for _ in range(t):
-    n = int(input())
-    if (n -3) % 3 == 0:
-        print("YES")
-        print(1, 2, n-3)
-    elif (n-6) % 3 == 0:
-        print('YES')
-        print(2, 4, n-6)
-    else: 
-        print('NO')
+# t = int(input())
+# for _ in range(t):
+#     n = int(input())
+#     if (n -3) % 3 == 0:
+#         print("YES")
+#         print(1, 2, n-3)
+#     elif (n-6) % 3 == 0:
+#         print('YES')
+#         print(2, 4, n-6)
+#     else: 
+#         print('NO')
     
 
+# class Solution:
+#     def isAnagram(self, s: str, t: str) -> bool:
+#         char_s = {}
+#         char_t = {}
+#         for char1 in s:
+#             if char1 not in char_s:
+#                 char_s[char1] = 1
+#             else: 
+#                 char_s[char1] += 1
+#         for char2 in t:
+#             if char2 not in char_t:
+#                 char_t[char2] = 1
+#             else: 
+#                 char_t[char2] += 1
+#         return char_s == char_t
