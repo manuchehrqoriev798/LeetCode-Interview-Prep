@@ -7,13 +7,13 @@
 class Solution:
     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
         prev = None
-        current = head
+        curr = head
         
-        while current is not None:
-            next_node = current.next
-            current.next = prev
-            prev = current
-            current = next_node
+        while curr is not None:
+            nxt = curr.next  # gets the next element
+            curr.next = prev # changes direction of the two element
+            prev = curr # changes curr to prev
+            curr = nxt # changes nxt to curr
         
         return prev
 
