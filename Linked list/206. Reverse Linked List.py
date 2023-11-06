@@ -6,16 +6,22 @@
 
 class Solution:
     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        prev = None
-        curr = head
-        
+        prev = None          # This will keep track of the previous node.
+        curr = head          # Start from the head of the linked list.
+
         while curr is not None:
+            # Store a reference to the next element (node) in the list.
             nxt = curr.next  # gets the next element
-            curr.next = prev # changes direction of the two element
-            prev = curr # changes curr to prev
-            curr = nxt # changes nxt to curr
-        
+            
+            # Reverse the direction of the two elements (change current node's next to point to the previous node).
+            curr.next = prev  # changes direction of the two elements
+            
+            # Move 'prev' and 'curr' pointers one step forward for the next iteration.
+            prev = curr  # changes 'curr' to 'prev'
+            curr = nxt   # changes 'nxt' to 'curr'
+
         return prev
+
 
 
 
