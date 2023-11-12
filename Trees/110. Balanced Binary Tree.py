@@ -33,6 +33,8 @@ class Solution:
     #     return max(left_depth, right_depth) + 1
 
 
+
+
         def dfs(root):
             # If the node is None (indicating that it's an empty tree), return [True, 0]
             # True indicates that the tree is balanced, and 0 is the height of the tree
