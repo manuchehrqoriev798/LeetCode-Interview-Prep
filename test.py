@@ -1,8 +1,4 @@
 
-f = open("read.txt", "w")
-f.close()
-
-
 
 
 
