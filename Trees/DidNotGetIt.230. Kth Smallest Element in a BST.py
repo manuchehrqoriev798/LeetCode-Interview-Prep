@@ -39,42 +39,21 @@ class Solution:
 
 
        # Solution 2: Iterative inorder DFS
+        n = 0
         stack = []
-        count = 0
-        while stack or root:
-            while root:
-                stack.append(root)
-                root = root.left
-            
-            root = stack.pop()
-            count += 1
-            if count == k:
-                return root.val
-            root = root.right
-
-        stack = []
+        cur = root
+        while cur or stack:
+            while cur:
+                stack.append(cur)
+                cur = cur.left
+            cur = stack.pop()
+            n += 1
+            if n == k:
+                return cur.val
+            cur = cur.right
         
         
         
         
         
-        # stack = []
-
-        # while True:
-        #     # Traverse left as far as possible, pushing nodes onto the stack.
-        #     while root:
-        #         stack.append(root)
-        #         root = root.left
-
-        #     # Pop the top node from the stack.
-        #     node = stack.pop()
-
-        #     # Decrease k by 1 since we've visited a node.
-        #     k -= 1
-
-        #     # If k becomes 0, we have found the kth smallest element.
-        #     if k == 0:
-        #         return node.val
-
-        #     # Move to the right subtree.
-        #     root = node.right
+   
