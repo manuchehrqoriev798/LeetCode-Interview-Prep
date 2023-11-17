@@ -1,30 +1,39 @@
 class Solution:
-    def combinationSum2(self, candidates: List[int], target: int) -> List[List[int]]:
+    def combinationSum2(self, candidates, target):
+        # Sort the candidates to handle duplicates
+        candidates.sort()
         
+        # Initialize the result list
         res = []
 
-        def dfs(start, cur, total):
-            if total == target:
-                res.append(cur.copy())
+        # Define the recursive function for backtracking
+        def backtrack(start, cur, remaining):
+            # Base case: if the remaining target is 0, add the current combination to the result
+            if remaining == 0:
+                res.append(cur[:])
                 return
             
-            if i >= len(candidates) or total > target:
-                return
-
-            # Iterate through the remaining elements
+            # Iterate through the remaining candidates
             for i in range(start, len(candidates)):
+                # Skip duplicates to avoid duplicate combinations
                 if i > start and candidates[i] == candidates[i - 1]:
                     continue
+                
+                # Skip if the current candidate is greater than the remaining target
+                if candidates[i] > remaining:
+                    break
 
-                # Decision: include nums[i] in the subset
+                # Include the current candidate in the combination
                 cur.append(candidates[i])
 
-                # Recursively call DFS for the next index
-                dfs(i, cur, total + candidates[i])
-                
+                # Recursively call the backtrack function for the next index
+                backtrack(i + 1, cur, remaining - candidates[i])
 
-                # Decision: do NOT include nums[i] in the subset
+                # Backtrack: remove the last element to explore other possibilities
                 cur.pop()
 
-        dfs(0, [], 0)
+        # Start the backtracking process
+        backtrack(0, [], target)
+
         return res
+
