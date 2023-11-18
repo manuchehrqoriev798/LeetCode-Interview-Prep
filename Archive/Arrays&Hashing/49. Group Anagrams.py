@@ -19,28 +19,33 @@
 
 
 
-from collections import defaultdict
 
 class Solution:
-    def groupAnagrams(self, strs):
-        anagram_map = defaultdict(list)
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        # Initialize a regular dictionary
+        res = {}
 
+        # Iterate through each word in the input list
         for word in strs:
+            # Initialize a list to represent the count of each character in the current word
             count = [0] * 26
+
+            # Count the occurrences of each character in the current word
             for char in word:
                 count[ord(char) - ord('a')] += 1
-            anagram_map[tuple(count)].append(word)
 
-        return list(anagram_map.values())
+            # Convert the count list to a tuple and use it as a key to group anagrams
+            key = tuple(count)
 
-# Sample input
-strs = ["eat", "tea", "tan", "ate", "nat", "bat"]
+            # Check if the key exists in the dictionary
+            if key in res:
+                res[key].append(word)
+            else:
+                # If the key doesn't exist, initialize a new list for that key
+                res[key] = [word]
 
-# Create an instance of the Solution class
-solution = Solution()
+        # Return the values (groups of anagrams) from the dictionary
+        return list(res.values())
 
-# Call the groupAnagrams function with the provided input
-result = solution.groupAnagrams(strs)
 
-# Print the result
-print(result)
+=
