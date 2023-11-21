@@ -20,7 +20,6 @@ class Solution:
         return max_length
         
         
-        
         # num_set = set(nums)
 
         # longest = 0
