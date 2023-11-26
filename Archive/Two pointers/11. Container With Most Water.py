@@ -19,3 +19,47 @@ class Solution:
             else:
                 r -= 1
         return res
+
+
+
+
+class Solution:
+    def maxArea(self, height: List[int]) -> int:
+        l, r = 0, len(height) - 1
+
+        best = 0 
+
+        while l < r and best < max(height) * (r - l): 
+            cur = (r - l) * (min(height[r], height[l]))
+            best = max(cur, best)
+            if height[r] > height[l]: 
+                l += 1
+            else:
+                r -= 1
+            
+        return best 
+
+
+
+
+
+
+
+
+class Solution:
+    def maxArea(self, height: List[int]) -> int:
+        l, r = 0, len(height) - 1
+
+        best = 0 
+
+        maxh = max(height)
+
+        while l < r and best < maxh * (r - l): 
+            cur = (r - l) * (min(height[r], height[l]))
+            best = max(cur, best)
+            if height[r] > height[l]: 
+                l += 1
+            else:
+                r -= 1
+            
+        return best 
