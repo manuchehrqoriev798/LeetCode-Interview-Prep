@@ -11,7 +11,12 @@ The challenge begins on November 28, 2023, and continues for the next 31 days, c
 
 ## Challenge Focus
 
-During this challenge, we will be following the LeetCode 150 list to guide us in solving a diverse set of problems and enhancing our problem-solving skills.
+Throughout this challenge, the objective is to work through the LeetCode 150 list, using the [Neetcode 150 Challenge](https://neetcode.io/roadmap) as a guide. This approach aims to assist in solving a diverse set of problems and improving problem-solving skills.
+
+## Participant
+
+- **Name:** Qoriev Manuchehr
+- **Instagram:** [@manuchehr_qoriev](https://www.instagram.com/manuchehr_qoriev/)
 
 ## Let's Do It!
 
@@ -19,21 +24,28 @@ Are you ready to enhance your coding skills? Let's take on this challenge togeth
 
 
 
-# 31-дневное испытание LeetCode
+
+# 31-дневный Челлендж LeetCode
 
 ## Обзор
 
-Этот кодовый вызов был начат [@growthhungry](https://www.instagram.com/growthhungry/) и [@dtaalai](https://www.instagram.com/dtaalai/).
-Цель вызова - решить одну задачу LeetCode каждый день в течение 31 дня, используя исключительно Python.
+Этот кодовый челлендж инициирован [@growthhungry](https://www.instagram.com/growthhungry/) и [@dtaalai](https://www.instagram.com/dtaalai/).
+Цель челленджа - решить по одной задаче LeetCode каждый день в течение 31 дня, используя исключительно Python.
 
-## Период вызова
+## Период челленджа
 
-Вызов начинается 28 ноября 2023 года и продолжается в течение следующих 31 дня, завершаясь 28 декабря 2023 года.
+Челлендж начинается 28 ноября 2023 года и продолжается следующие 31 день, завершаясь 28 декабря 2023 года.
 
-## Фокус вызова
+## Основной акцент челленджа
 
-В течение этого вызова мы будем следовать списку LeetCode 150, чтобы направлять нас в решении разнообразных задач и улучшении наших навыков решения задач.
+В течение этого челленджа основная цель - пройти через список LeetCode 150, используя [Neetcode 150 Challenge](https://neetcode.io/roadmap) в качестве руководства. Этот подход направлен на решение разнообразных задач и улучшение навыков решения проблем.
 
-## Давайте это сделаем!
+## Участник
 
-Готовы улучшить свои навыки кодирования? Давайте вместе принять этот вызов и улучшим наши навыки решения задач. Счастливого кодирования!
+- **Имя:** Qoriev Manuchehr
+- **Instagram:** [@manuchehr_qoriev](https://www.instagram.com/manuchehr_qoriev/)
+
+## Поехали!
+
+Готовы улучшить свои навыки программирования? Давайте вместе принять этот челлендж и улучшим свои навыки решения задач. Удачного кодинга!
+
