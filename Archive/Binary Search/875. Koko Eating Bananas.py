@@ -4,11 +4,11 @@ class Solution:
         res = r
         while l <= r:
             k = l + (r - l) // 2
-            hrs = 0
+            hours = 0
             for pile in piles:
-                hrs += ceil(pile / k)
+                hours += ceil(pile / k)
                 
-            if hrs > h:
+            if hours > h:
                 l = k + 1
             else:
                 res = k
