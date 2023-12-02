@@ -17,27 +17,23 @@ class Solution:
 
 
 class Solution:
-    def maxProfit(self, prices: List[int]) -> int:
-        # Initialize left and right pointers for iterating through the prices.
-        l, r = 0, 1
-        # Initialize the variable to store the maximum profit.
-        profit = 0
+    def maxProfit(self, prices) -> int:
+        if len(prices) < 2:
+            return 0
 
-        # Iterate through the prices using the right pointer.
+        l, r = 0, 1
+        max_profit = 0
+
         while r < len(prices):
-            # Check if selling at the current right pointer position would yield a positive profit.
-            if prices[r] - prices[l] > 0:
-                # Update the maximum profit if the current profit is greater.
-                profit = max(profit, prices[r] - prices[l])
-            else:
-                # If selling at the current right pointer position results in a loss or no gain,
-                # update the left pointer to the current right pointer position.
+            max_profit = max(max_profit, prices[r] - prices[l])
+
+            if prices[r] - prices[l] < 0:
                 l = r
-            # Move the right pointer to the next position.
-            r += 1
+                r += 1
+            else:
+                r += 1
         
-        # Return the maximum profit obtained.
-        return profit
+        return max_profit
 
 
 
