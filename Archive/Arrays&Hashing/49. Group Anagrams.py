@@ -26,6 +26,7 @@ class Solution:
         return list(res.values())
 
 
+
  class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         anagram_dict = {}
