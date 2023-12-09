@@ -48,10 +48,8 @@ class Solution:
 
 
 
-
 class Solution:
     def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
-        l, r = 0, 0
         merged = nums1 + nums2
 
         merged.sort()
