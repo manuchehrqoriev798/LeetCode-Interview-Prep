@@ -1,3 +1,27 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Does not pass the time limit
 class Solution:
     def maxSlidingWindow(self, nums, k: int):
         l = 0
