@@ -37,3 +37,59 @@ class Solution:
             second.next = tmp1  # Connect the current node from the second half to the rest of the first half
             first = tmp1  # Move to the next node in the first half
             second = tmp2  # Move to the next node in the second half
+            
+
+
+
+
+
+
+
+
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+
+class Solution:
+    def reorderList(self, head: ListNode) -> None:
+        """
+        Do not return anything, modify head in-place instead.
+        """
+        
+        # Create an empty list to store linked list nodes
+        arr = []
+        
+        # Initialize a pointer 'cur' to the head of the linked list and 'length' to 0
+        cur, length = head, 0
+
+        # Traverse the linked list and store nodes in the 'arr' list
+        while cur:
+            arr.append(cur)  # Append the current node to the list
+            cur, length = cur.next, length + 1  # Move to the next node and update length
+
+        # Initialize two pointers, 'left' and 'right', and 'last' to the original head
+        left, right = 0, length - 1
+        last = head
+        
+        # Reorder the linked list by interleaving nodes from the first and reversed second halves
+        while left < right:
+            # Point the next of the left node to the right node
+            arr[left].next = arr[right]
+            left += 1  # Move to the next left node
+            
+            # Check if 'left' has reached 'right' to avoid duplicate connections
+            if left == right:
+                last = arr[right]  # Update 'last' to the right node
+                break
+
+            # Point the next of the right node to the left node
+            arr[right].next = arr[left]
+            right -= 1  # Move to the next right node
+            
+            last = arr[left]  # Update 'last' to the left node
+
+        # Set the 'next' of the last node to None to terminate the modified linked list
+        if last:
+            last.next = None
