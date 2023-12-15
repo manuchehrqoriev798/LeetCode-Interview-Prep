@@ -45,6 +45,9 @@ class Solution:
 
 
 
+
+
+
 class Solution:
     def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
         dummy = ListNode(0)
@@ -78,3 +81,35 @@ class Solution:
             tail = tail.next
 
         return dummy.next
+
+
+
+
+class Solution:
+    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+        dummy = ListNode()
+        cur = dummy
+
+        l1Num = ""
+        l2Num = ""
+        
+        while l1:
+            l1Num += str(l1.val)
+            l1 = l1.next
+        while l2:
+            l2Num += str(l2.val)
+            l2 = l2.next
+        
+        reversel1 = l1Num[::-1]
+        reversel2 = l2Num[::-1]
+
+        total = str(int(reversel1) + int(reversel2))
+
+
+
+        for num in total[::-1]:
+            cur.next = ListNode(num)
+            cur = cur.next
+        
+        return dummy.next
+
