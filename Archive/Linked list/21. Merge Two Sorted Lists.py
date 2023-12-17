@@ -22,7 +22,7 @@ class Solution:
                 
                 list2 = list2.next  
 
-            # Move 'tail' to the last node in the merged list.
+            # Move 'tail' to the next node.
             tail = tail.next      # Move 'tail' to the last node in the merged list.
 
         
