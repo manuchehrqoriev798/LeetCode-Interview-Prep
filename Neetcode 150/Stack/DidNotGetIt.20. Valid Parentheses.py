@@ -1,5 +1,5 @@
 class Solution:
-    def isValid(self, s: str) -> bool:
+    def isValid(self, s):
         stack = []
         closeToOpen = {')' : '(', '}' : '{', ']' : '['}
         for i in s:
@@ -11,3 +11,7 @@ class Solution:
             else: 
                 stack.append(i)
         return not stack
+
+
+s = "()[]{}"
+Solution().isValid(s)
