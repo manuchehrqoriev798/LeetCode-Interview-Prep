@@ -3,7 +3,8 @@ Don't search for the right choice, make the choice right !!!
 
 
 
-You should understand what happens if any line of code will be removed
+You should understand what happens if any line of code will be removed.
+You can do it, come on !
 
 # TODO:
 1. Stack. 2 problems solved
