@@ -18,13 +18,9 @@ From 13th to 15th: Easy Marathone
 From 16th to 20th: Medium Marathone
 Yandex Problems
 
+Get December Badge.
 
-
-
-
-
-
-# TODO problems:
+# Solve 5 problems each:
 - Two Pointers
 - Binary Search
 - Sliding Window
