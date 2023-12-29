@@ -6,32 +6,25 @@ Don't search for the right choice, make the choice right !!!
 You should understand what happens if any line of code will be removed.
 You can do it, come on !
 
-# TODO:
-1. Stack. 2 problems solved
-2. Tree
-3. Backtracking
-4. Graph
-
-5. Easy Marathone
-6. Medium Marathone
-
-5. Yandex Problems
 
 
 
-
-
-#TODO in details:
-From 27th to 30th: Stack
-From 1st to 4th: Tree
+#TODO list:
+From today to 4th: Tree
 From 5th to 8th: Backtracking
 From 9th to 12th: Graph
 
 From 13th to 15th: Easy Marathone
 From 16th to 20th: Medium Marathone
+Yandex Problems
 
 
-TODO topics:
+
+
+
+
+
+# TODO problems:
 - Two Pointers
 - Binary Search
 - Sliding Window
