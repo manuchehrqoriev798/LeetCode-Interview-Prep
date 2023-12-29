@@ -3,16 +3,19 @@ class Solution:
         stack = []
         res = [0] * len(temperatures)
 
+        # Iterate over the temperatures using the enumerate function to get both the index and temperature.
         for i, temp in enumerate(temperatures):
+            # While the stack is not empty and the current temperature is higher than the temperature at the top of the stack.
             while stack and temperatures[stack[-1]] < temp:
+                # Pop the index from the stack.
                 prev_index = stack.pop()
+                # Update the result at the popped index with the number of days until a warmer temperature.
                 res[prev_index] = i - prev_index
 
+            # Push the current index onto the stack.
             stack.append(i)
 
         return res
-
-
 
 
 
