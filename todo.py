@@ -4,7 +4,16 @@ Don't search for the right choice, make the choice right !!!
 
 
 You should understand what happens if any line of code will be removed.
-You can do it, come on !
+
+
+What's within my control:
+Solve Leetcode
+Get a job
+Make my life better
+
+What's beyond my control:
+Fuck it if i cant control, why it should bother me !
+
 
 
 
