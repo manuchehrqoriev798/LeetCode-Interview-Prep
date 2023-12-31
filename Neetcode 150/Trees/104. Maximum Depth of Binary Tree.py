@@ -50,3 +50,23 @@ class Solution:
                 stack.append([node.left, depth + 1])
                 stack.append([node.right, depth + 1])
         return level
+
+
+class Solution:
+    def maxDepth(self, root: Optional[TreeNode]) -> int:
+        if root is None:
+            return 0
+        
+        stack = [[root, 1]]
+        level = 1
+
+        while stack:
+            node, depth = stack.pop()
+            if node:
+                level = max(level, depth)
+                if node.left:                               # it avoids adding None to the stack and saves some iterations
+                    stack.append([node.left, depth + 1])
+                if node.right:
+                    stack.append([node.right, depth + 1])
+        
+        return level
