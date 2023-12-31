@@ -4,7 +4,7 @@ class Solution:
         
         if not root:
             return 0
-        # 1 + because it should count root itself too.
+        # 1 + because it should count the last node where it ended too.
         return 1 + max(self.maxDepth(root.left), self.maxDepth(root.right))
 
 

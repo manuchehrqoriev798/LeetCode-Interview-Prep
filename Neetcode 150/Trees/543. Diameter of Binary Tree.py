@@ -45,11 +45,7 @@ class Solution:
         # Recursively find the diameter of the left and right subtrees
         ldiameter = self.diameterOfBinaryTree(root.left)
         rdiameter = self.diameterOfBinaryTree(root.right)
-        
-        # Return the maximum of three values:
-        # 1. Sum of depths of left and right subtrees
-        # 2. Diameter of the left subtree
-        # 3. Diameter of the right subtree
+
         return max(ldepth + rdepth, max(ldiameter, rdiameter))
 
     def depth(self, node: Optional[TreeNode]) -> int:
@@ -59,8 +55,15 @@ class Solution:
         left_depth = self.depth(node.left)
         right_depth = self.depth(node.right)
         
-        # Return the depth of the subtree, which is 1 plus the maximum depth of left and right subtrees
+        # Return the max depth from the current node, that's if why 1 +. 1 is current node
         return 1 + max(left_depth, right_depth)
+
+
+
+
+
+
+
 
 
 
