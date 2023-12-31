@@ -32,6 +32,39 @@ class Solution:
 
 
 
+
+
+class Solution:
+    def diameterOfBinaryTree(self, root: Optional[TreeNode]) -> int:
+        if not root:
+            return 0
+        
+        ldepth = self.depth(root.left)
+        rdepth = self.depth(root.right)
+        
+        # Recursively find the diameter of the left and right subtrees
+        ldiameter = self.diameterOfBinaryTree(root.left)
+        rdiameter = self.diameterOfBinaryTree(root.right)
+        
+        # Return the maximum of three values:
+        # 1. Sum of depths of left and right subtrees
+        # 2. Diameter of the left subtree
+        # 3. Diameter of the right subtree
+        return max(ldepth + rdepth, max(ldiameter, rdiameter))
+
+    def depth(self, node: Optional[TreeNode]) -> int:
+        if not node:
+            return 0
+        
+        left_depth = self.depth(node.left)
+        right_depth = self.depth(node.right)
+        
+        # Return the depth of the subtree, which is 1 plus the maximum depth of left and right subtrees
+        return 1 + max(left_depth, right_depth)
+
+
+
+
 class Solution:
     def diameterOfBinaryTree(self, root: Optional[TreeNode]) -> int:
         self.ans = 0
@@ -42,25 +75,6 @@ class Solution:
             return 1 + max(left, right)
         depth(root)
         return self.ans
-
-
-
-
-
-class Solution:
-    def diameterOfBinaryTree(self, root: Optional[TreeNode]) -> int:
-        if not root:
-            return 0
-        lheight = self.height(root.left)
-        rheight = self.height(root.right)
-        ldiameter = self.diameterOfBinaryTree(root.left)
-        rdiameter = self.diameterOfBinaryTree(root.right)
-        return max(lheight + rheight, max(ldiameter, rdiameter))
-
-    def height(self, node: Optional[TreeNode]) -> int:
-        if not node:
-            return 0
-        return 1 + max(self.height(node.left), self.height(node.right))
 
 
 
