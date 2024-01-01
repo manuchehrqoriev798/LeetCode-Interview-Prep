@@ -22,7 +22,6 @@ class Solution:
             if level:
                 res.append(level)
 
-        # Return the final result
         return res
 
 
