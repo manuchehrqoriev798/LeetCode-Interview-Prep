@@ -1,5 +1,4 @@
 class Solution:
-    # Function to find the lowest common ancestor (LCA) of two nodes in a Binary Search Tree (BST)
     def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
         # Start from the root of the tree
         cur =  root
