@@ -24,5 +24,83 @@ class Solution:
         if root and subRoot and root.val == subRoot.val:
             return (self.sameTree(root.left, subRoot.left) and 
                     self.sameTree(root.right, subRoot.right))
-        # If any of the above conditions is not met, the trees are not the same
-        return False
+        else:
+            return False
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Solution:
+    def isSubtree(self, root: Optional[TreeNode], subRoot: Optional[TreeNode]) -> bool:
+        if not root: 
+            return False
+        
+        if not subRoot:
+            return True
+
+        is_left_subtree = self.isSubtree(root.left, subRoot)
+        is_right_subtree = self.isSubtree(root.right, subRoot)
+
+      
+        return self.sameTree(root, subRoot) or is_left_subtree or is_right_subtree
+
+    def sameTree(self, root, subRoot):
+        if not root and not subRoot:
+            return True
+
+        if not root or not subRoot:
+            return False
+
+        if root.val != subRoot.val:
+            return False
+        
+        left_same = self.sameTree(root.left, subRoot.left)
+        right_same = self.sameTree(root.right, subRoot.right)
+
+        return left_same and right_same
+
+
+
+
+
+
+
+
+
+
+
+# short version
+class Solution:
+    def isSubtree(self, root: Optional[TreeNode], subRoot: Optional[TreeNode]) -> bool:
+        if not root: return False
+        
+        if not subRoot: return True
+      
+        return (self.sameTree(root, subRoot) or 
+                self.isSubtree(root.left, subRoot) or 
+                self.isSubtree(root.right, subRoot))
+
+    def sameTree(self, root, subRoot):
+        if not root and not subRoot: return True
+
+        if not root or not subRoot: return False
+
+        if root.val != subRoot.val: return False
+
+        return (self.sameTree(root.left, subRoot.left) and 
+                self.sameTree(root.right, subRoot.right))
