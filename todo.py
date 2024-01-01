@@ -18,6 +18,16 @@ Fuck it if i cant control, why it should bother me !
 
 
 
+
+
+1. Top-k Largest Elements
+2. Sliding Window
+3. Backtracking
+4. Dynamic Programming
+5. DFS and BFS
+6. Topological Sort
+7. Dijkstra's Algorithm
+
 #TODO list:
 From today to 4th: Tree
 From 5th to 8th: Backtracking
