@@ -5,10 +5,10 @@ class Solution:
         q.append(root)
 
         while q:
-            qlen = len(q)
             level = []
             
-            for i in range(qlen):
+            levelSize = len(q)
+            for i in range(levelSize):
                 node = q.popleft()
                 
                 if node:
@@ -38,7 +38,8 @@ class Solution:
 
         while q:
             level = []
-            for i in range(len(q)):
+            levelSize = len(q)
+            for i in range(levelSize):
                 node = q.popleft()
                 level.append(node.val)
                 if node.left:
