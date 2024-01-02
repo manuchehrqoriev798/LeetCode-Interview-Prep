@@ -20,6 +20,19 @@ Fuck it if i cant control, why it should bother me !
 
 
 
+
+#TODO list:
+From 2th to 8th: Backtracking
+From 9th to 12th: Graph
+
+From 13th to 15th: Easy Marathone
+From 16th to 20th: Medium Marathone
+Yandex Problems
+Open source contribution 
+
+
+
+
 1. Top-k Largest Elements
 2. Sliding Window
 3. Backtracking
@@ -28,15 +41,8 @@ Fuck it if i cant control, why it should bother me !
 6. Topological Sort
 7. Dijkstra's Algorithm
 
-#TODO list:
-From today to 4th: Tree
-From 5th to 8th: Backtracking
-From 9th to 12th: Graph
 
-From 13th to 15th: Easy Marathone
-From 16th to 20th: Medium Marathone
-Yandex Problems
-Open source contribution 
+
 
 # Solve 5 problems each:
 - Two Pointers
