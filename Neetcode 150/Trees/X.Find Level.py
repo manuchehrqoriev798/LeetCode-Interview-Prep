@@ -1,6 +1,6 @@
 def find_level(root, target):
     if not root:
-        return -1  # Return -1 if the tree is empty
+        return 0
 
     level = 0
     queue = [(root, level)]
@@ -16,4 +16,4 @@ def find_level(root, target):
         if current_node.right:
             queue.append((current_node.right, current_level + 1))
 
-    return -1  # Return -1 if the target node is not found in the tree
+    return 0
