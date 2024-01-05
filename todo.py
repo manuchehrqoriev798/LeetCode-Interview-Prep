@@ -1,21 +1,12 @@
-Motivation is temporarily, have a discipline !
+# Motivation is temporarily, have a discipline !
 Don't search for the right choice, make the choice right !!!
 
+# You should understand what happens if any line of code will be removed.
 
-
-You should understand what happens if any line of code will be removed.
-
-
-What's within my control:
-Solve Leetcode
-Get a job
-Make my life better
-
-What's beyond my control:
-Fuck it if i cant control, why it should bother me !
-
-
-
+# What's within my control:
+# Solve Leetcode, Get a job, Make my life better.
+# What's beyond my control:
+# Fuck it if i cant control, why it should bother me !
 
 
 
@@ -23,11 +14,12 @@ Fuck it if i cant control, why it should bother me !
 
 #TODO list:
 From 2th to 8th: Backtracking
-From 9th to 12th: Graph
+From 9th to 10th: Easy Marathone
+From 11th to 12th: Medium Marathone
+From 13th to 15th: Small Pool 
+From 16th to 20th: Graph
+Big Pool
 
-From 13th to 15th: Easy Marathone
-From 16th to 20th: Medium Marathone
-Yandex Problems
 Open source contribution 
 
 
