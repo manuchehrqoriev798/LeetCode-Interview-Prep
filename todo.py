@@ -13,7 +13,6 @@ Don't search for the right choice, make the choice right !!!
 
 
 #TODO list:
-From 2th to 8th: Backtracking
 From 9th to 10th: Easy Marathone
 From 11th to 12th: Medium Marathone
 From 13th to 15th: Small Pool 
