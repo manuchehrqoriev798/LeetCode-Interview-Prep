@@ -10,7 +10,7 @@ I believe that I can do it !
 
 
 #TODO list:
-From 9th to 10th: Easy Marathone
+From 9th to 12th: Easy Marathone
 From 11th to 12th: Medium Marathone
 From 13th to 15th: Small Pool 
 From 16th to 20th: Graph
