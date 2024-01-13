@@ -1,7 +1,9 @@
+divmod(), count()
+
+
 ,0.9734864135,https://leetcode.com/problems/counting-bits,Counting Bits,Counting Bits,bitwise,9:33:57,9:42:02,0:08:04,0:33:57,,,,
 ,0.9621159206,https://leetcode.com/problems/maximum-average-subarray-i,Maximum Average Subarray I,Maximum Average Subarray I,sliding window,9:47:27,10:00:03,0:12:36,0:47:27,,,,
-,0.9457814402,https://leetcode.com/problems/move-zeroes,Move Zeroes,Move Zeroes,two pointers,10:00:39,10:08:34,0:07:55,1:00:39,,,,
-,0.9333696123,https://leetcode.com/problems/valid-perfect-square,Valid Perfect Square,Valid Perfect Square,binary search,10:08:34,10:16:46,0:08:12,1:08:34,,,,
+
 ,0.9168700313,https://leetcode.com/problems/add-digits,Add Digits,Add Digits,divmod,10:17:16,10:23:15,0:05:59,1:17:16,,,,
 ,0.886147705,https://leetcode.com/problems/student-attendance-record-i,Student Attendance Record I,Student Attendance Record I,string,10:24:09,10:30:08,0:06:00,1:24:09,,,,
 ,0.8748886791,https://leetcode.com/problems/binary-tree-postorder-traversal,Binary Tree Postorder Traversal,Binary Tree Postorder Traversal,tree,10:30:21,10:40:35,0:10:14,1:30:21,,,,
