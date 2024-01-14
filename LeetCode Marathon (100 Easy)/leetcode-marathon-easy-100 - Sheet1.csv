@@ -1,33 +1,15 @@
-divmod(), count()
+divmod(), count(), Counter, split(), bisect, 
 
 
 ,0.9734864135,https://leetcode.com/problems/counting-bits,Counting Bits,Counting Bits,bitwise,9:33:57,9:42:02,0:08:04,0:33:57,,,,
 ,0.9621159206,https://leetcode.com/problems/maximum-average-subarray-i,Maximum Average Subarray I,Maximum Average Subarray I,sliding window,9:47:27,10:00:03,0:12:36,0:47:27,,,,
-
-,0.9168700313,https://leetcode.com/problems/add-digits,Add Digits,Add Digits,divmod,10:17:16,10:23:15,0:05:59,1:17:16,,,,
-,0.886147705,https://leetcode.com/problems/student-attendance-record-i,Student Attendance Record I,Student Attendance Record I,string,10:24:09,10:30:08,0:06:00,1:24:09,,,,
-,0.8748886791,https://leetcode.com/problems/binary-tree-postorder-traversal,Binary Tree Postorder Traversal,Binary Tree Postorder Traversal,tree,10:30:21,10:40:35,0:10:14,1:30:21,,,,
-,0.8672464467,https://leetcode.com/problems/is-subsequence,Is Subsequence,Is Subsequence,stack,10:40:43,10:47:14,0:06:31,1:40:43,,,,
-,0.8568815286,https://leetcode.com/problems/symmetric-tree,Symmetric Tree,Symmetric Tree,tree,10:47:20,11:09:44,0:22:24,1:47:20,,,,
-,0.8325283504,https://leetcode.com/problems/plus-one,Plus One,Plus One,divmod,11:17:33,11:23:54,0:06:22,2:17:33,,,,
-,0.8311954791,https://leetcode.com/problems/meeting-rooms,Meeting Rooms,Meeting Rooms,sorting,11:23:59,11:33:41,0:09:42,2:23:59,,,,
-,0.8300948775,https://leetcode.com/problems/middle-of-the-linked-list,Middle of the Linked List,Middle of the Linked List,linked list,11:33:48,11:40:19,0:06:31,2:33:48,,,,
-,0.8098842316,https://leetcode.com/problems/check-if-n-and-its-double-exist,Check If N and Its Double Exist,Check If N and Its Double Exist,hash,11:40:19,11:45:54,0:05:35,2:40:19,,,,
 ,0.8050260647,https://leetcode.com/problems/n-th-tribonacci-number,N-th Tribonacci Number,N-th Tribonacci Number,dp,11:46:14,11:51:51,0:05:37,2:46:14,,,,
 ,0.7755030108,https://leetcode.com/problems/binary-search,Binary Search,Binary Search,binary search,11:53:01,11:56:19,0:03:18,2:53:01,,,,
 ,0.7715311095,https://leetcode.com/problems/pascals-triangle,Pascal's Triangle,Pascal's Triangle,dp,11:56:31,12:01:09,0:04:38,2:56:31,,,,
 ,0.7680103918,https://leetcode.com/problems/single-number,Single Number,Single Number,bitwise,12:01:14,12:05:51,0:04:38,3:01:14,,,,
-,0.7677172228,https://leetcode.com/problems/peak-index-in-a-mountain-array,Peak Index in a Mountain Array,Peak Index in a Mountain Array,binary search,12:05:51,12:19:13,0:13:22,3:05:51,,,,
-,0.7637372693,https://leetcode.com/problems/valid-palindrome,Valid Palindrome,Valid Palindrome,two pointers,12:19:24,12:26:53,0:07:29,3:19:24,,,,
-,0.7533240895,https://leetcode.com/problems/reverse-string,Reverse String,Reverse String,two pointers,12:26:58,12:30:57,0:03:59,3:26:58,,,,
-,0.7434133796,https://leetcode.com/problems/sqrtx,Sqrt(x),Sqrt(x),binary search,12:31:01,12:49:57,0:18:56,3:31:01,,,,
-,0.7313494132,https://leetcode.com/problems/find-numbers-with-even-number-of-digits,Find Numbers with Even Number of Digits,Find Numbers with Even Number of Digits,math,12:58:49,13:02:31,0:03:43,3:58:49,,,,
-,0.7238242061,https://leetcode.com/problems/find-the-difference,Find the Difference,Find the Difference,hash,13:02:36,13:07:27,0:04:51,4:02:36,,,,
-,0.7181348537,https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string,Remove All Adjacent Duplicates In String,Remove All Adjacent Duplicates In String,stack,13:07:37,13:16:20,0:08:42,4:07:37,,,,
-,0.7136509215,https://leetcode.com/problems/reverse-words-in-a-string-iii,Reverse Words in a String III,Reverse Words in a String III,two pointers,13:16:31,13:20:16,0:03:46,4:16:31,,,,
 ,0.7106086026,https://leetcode.com/problems/first-bad-version,First Bad Version,First Bad Version,binary search,13:20:39,13:25:59,0:05:20,4:20:39,,,,
-,0.7064897133,https://leetcode.com/problems/guess-number-higher-or-lower,Guess Number Higher or Lower,Guess Number Higher or Lower,binary search,13:26:03,13:31:24,0:05:21,4:26:03,,,,
-,0.6990882069,https://leetcode.com/problems/search-insert-position,Search Insert Position,Search Insert Position,binary search,13:31:24,13:33:26,0:02:02,4:31:24,,,,
+
+
 ,0.6964513774,https://leetcode.com/problems/power-of-four,Power of Four,Power of Four,math,13:33:55,13:38:37,0:04:42,4:33:55,,,,
 ,0.6882630436,https://leetcode.com/problems/valid-anagram,Valid Anagram,Valid Anagram,hash,13:38:40,13:39:52,0:01:11,4:38:40,,,,
 ,0.6768993193,https://leetcode.com/problems/can-place-flowers,Can Place Flowers,Can Place Flowers,array,13:40:04,13:47:02,0:06:58,4:40:04,,,,
