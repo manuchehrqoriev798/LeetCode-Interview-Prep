@@ -12,11 +12,6 @@ The challenge involves consistently solving LeetCode problems each day, using Py
 
 The main goal is to tackle the LeetCode 150 list, following the [Neetcode 150 Challenge](https://neetcode.io/roadmap) as a roadmap to enhance problem-solving skills.
 
-## Participant
-
-- **Name:** Qoriev Manuchehr
-- **Instagram:** [@manuchehr_qoriev](https://www.instagram.com/manuchehr_qoriev/)
-
 ## Let's Do It!
 
-Ready to boost your coding skills? Join in on this challenge, and together, let's improve our problem-solving abilities. Happy coding!
+Ready to boost your coding skills? Let's improve our problem-solving abilities. Happy coding!
