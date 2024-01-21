@@ -10,11 +10,12 @@ I believe that I can do it !
 
 
 #TODO list:
-From 9th to 12th: Easy Marathone
-From 11th to 12th: Medium Marathone
-From 13th to 15th: Small Pool 
-From 16th to 20th: Graph
-Big Pool
+From 21th: Easy Marathone
+From 23th: Medium Marathone
+From 24th to 26th: Small Pool 
+From 27th to 31th: Tree + Recursion, repetition of all stuff
+From 1st to 3rd :  Big Pool
+Fucking Graph:
 
 Open source contribution 
 
