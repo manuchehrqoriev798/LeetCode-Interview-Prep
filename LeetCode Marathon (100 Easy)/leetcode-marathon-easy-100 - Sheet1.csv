@@ -1,6 +1,6 @@
-learned: divmod(), count(), Counter, split(), bisect,  Python evaluates conditions from left to right, Counter(nums).most_common(1)[0][0]
+learned: divmod(), count(), Counter, split(), bisect,  Python evaluates conditions from left to right, Counter(nums).most_common(1)[0][0], strip, 
 
-Need to learn: recursion, dictKeyAndValues, enumerate(num), bfs, dfs, def ordertraversal(), f""
+Need to learn: recursion, dictKeyAndValues, enumerate(num), bfs, dfs, def ordertraversal(), f"", dp = [0] * len(nums, 
 
 ,0.9734864135,https://leetcode.com/problems/counting-bits,Counting Bits,Counting Bits,bitwise,9:33:57,9:42:02,0:08:04,0:33:57,,,,
 ,0.9621159206,https://leetcode.com/problems/maximum-average-subarray-i,Maximum Average Subarray I,Maximum Average Subarray I,sliding window,9:47:27,10:00:03,0:12:36,0:47:27,,,,
@@ -28,9 +28,7 @@ Need to learn: recursion, dictKeyAndValues, enumerate(num), bfs, dfs, def ordert
 
 ,0.4168472697,https://leetcode.com/problems/add-binary,Add Binary,Add Binary,divmod,17:06:13,17:11:56,0:05:43,8:06:13,,,,
 
-,0.4090683184,https://leetcode.com/problems/binary-tree-preorder-traversal,Binary Tree Preorder Traversal,Binary Tree Preorder Traversal,tree,17:32:39,17:35:16,0:02:37,8:32:39,,,,
-,0.4043198716,https://leetcode.com/problems/length-of-last-word,Length of Last Word,Length of Last Word,string,17:35:33,17:48:23,0:12:50,8:35:33,,,,
-,0.3888810626,https://leetcode.com/problems/max-consecutive-ones,Max Consecutive Ones,Max Consecutive Ones,dp,17:48:31,17:53:53,0:05:22,8:48:31,,,,
+
 ,0.3407855756,https://leetcode.com/problems/longest-continuous-increasing-subsequence,Longest Continuous Increasing Subsequence,Longest Continuous Increasing Subsequence,array,17:53:53,18:00:14,0:06:21,8:53:53,,,,
 ,0.3218211007,https://leetcode.com/problems/remove-duplicates-from-sorted-array,Remove Duplicates from Sorted Array,Remove Duplicates from Sorted Array,two pointers,18:00:32,18:09:51,0:09:19,9:00:32,,,,
 ,0.2929479198,https://leetcode.com/problems/running-sum-of-1d-array,Running Sum of 1d Array,Running Sum of 1d Array,array,18:10:08,18:11:15,0:01:07,9:10:08,,,,
