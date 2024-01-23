@@ -26,14 +26,8 @@ Need to learn: recursion, dictKeyAndValues, enumerate(num), bfs, dfs, def ordert
 
 
 
-
-
-,0.4492979173,https://leetcode.com/problems/delete-node-in-a-linked-list,Delete Node in a Linked List,Delete Node in a Linked List,linked list,16:48:53,16:52:52,0:03:59,7:48:53,,,,
-,0.4378565324,https://leetcode.com/problems/kids-with-the-greatest-number-of-candies,Kids With the Greatest Number of Candies,Kids With the Greatest Number of Candies,array,16:53:00,16:56:56,0:03:56,7:53:00,,,,
-,0.4264356992,https://leetcode.com/problems/reverse-vowels-of-a-string,Reverse Vowels of a String,Reverse Vowels of a String,two pointers,16:57:05,17:01:21,0:04:16,7:57:05,,,,
-,0.4183311199,https://leetcode.com/problems/sum-of-left-leaves,Sum of Left Leaves,Sum of Left Leaves,tree,17:01:30,17:06:05,0:04:34,8:01:30,,,,
 ,0.4168472697,https://leetcode.com/problems/add-binary,Add Binary,Add Binary,divmod,17:06:13,17:11:56,0:05:43,8:06:13,,,,
-,0.412933884,https://leetcode.com/problems/longest-palindrome,Longest Palindrome,Longest Palindrome,hash,17:12:01,17:23:07,0:11:06,8:12:01,,,,
+
 ,0.4090683184,https://leetcode.com/problems/binary-tree-preorder-traversal,Binary Tree Preorder Traversal,Binary Tree Preorder Traversal,tree,17:32:39,17:35:16,0:02:37,8:32:39,,,,
 ,0.4043198716,https://leetcode.com/problems/length-of-last-word,Length of Last Word,Length of Last Word,string,17:35:33,17:48:23,0:12:50,8:35:33,,,,
 ,0.3888810626,https://leetcode.com/problems/max-consecutive-ones,Max Consecutive Ones,Max Consecutive Ones,dp,17:48:31,17:53:53,0:05:22,8:48:31,,,,
