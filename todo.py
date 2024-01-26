@@ -10,11 +10,11 @@ I believe that I can do it !
 
 
 #TODO list:
-From 21th: Easy Marathone
-From 23th: Medium Marathone
-From 24th to 26th: Small Pool 
+From 26th: Easy Marathone
+From 27th to 29th: Medium Marathone
 From 27th to 31th: Tree + Recursion, repetition of all stuff
-From 1st to 3rd :  Big Pool
+From february: Small Pool 
+From february:  Big Pool
 Fucking Graph:
 
 Open source contribution 

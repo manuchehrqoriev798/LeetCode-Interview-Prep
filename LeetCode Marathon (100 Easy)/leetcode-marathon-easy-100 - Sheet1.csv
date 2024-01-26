@@ -1,4 +1,4 @@
-learned: divmod(), count(), Counter, split(), bisect,  Python evaluates conditions from left to right, Counter(nums).most_common(1)[0][0], strip, 
+learned: divmod(), count(), Counter, split(), bisect,  Python evaluates conditions from left to right, Counter(nums).most_common(1)[0][0], strip,  d[char] = d.get(char, 0) + 1
 
 Need to learn: recursion, dictKeyAndValues, enumerate(num), bfs, dfs, def ordertraversal(), f"", dp = [0] * len(nums, 
 
@@ -37,22 +37,19 @@ Need to learn: recursion, dictKeyAndValues, enumerate(num), bfs, dfs, def ordert
 
 ,0.281381725,https://leetcode.com/problems/merge-two-sorted-lists,Merge Two Sorted Lists,Merge Two Sorted Lists,linked list,18:32:24,18:37:18,0:04:54,9:32:24,,,,
 
-,0.2282700609,https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer,Convert Binary Number in a Linked List to Integer,Convert Binary Number in a Linked List to Integer,linked list,18:58:34,19:01:37,0:03:03,9:58:34,,,,
-,0.2236016376,https://leetcode.com/problems/number-of-1-bits,Number of 1 Bits,Number of 1 Bits,bitwise,19:10:26,19:11:36,0:01:10,10:10:26,,,,
-,0.2220369505,https://leetcode.com/problems/range-sum-of-bst,Range Sum of BST,Range Sum of BST,tree,19:11:45,19:17:28,0:05:44,10:11:45,,,,
-,0.2067085904,https://leetcode.com/problems/maximum-depth-of-binary-tree,Maximum Depth of Binary Tree,Maximum Depth of Binary Tree,tree,19:17:33,19:19:17,0:01:44,10:17:33,,,,
 ,0.1979477421,https://leetcode.com/problems/sort-array-by-parity,Sort Array By Parity,Sort Array By Parity,two pointers,19:19:27,19:22:16,0:02:49,10:19:27,,,,
 ,0.1932758502,https://leetcode.com/problems/monotonic-array,Monotonic Array,Monotonic Array,array,19:22:21,19:25:46,0:03:26,10:22:21,,,,
-,0.181618788,https://leetcode.com/problems/two-sum-iv-input-is-a-bst,Two Sum IV - Input is a BST,Two Sum IV - Input is a BST,tree,19:25:50,19:30:26,0:04:36,10:25:50,,,,
-,0.1574962495,https://leetcode.com/problems/average-of-levels-in-binary-tree,Average of Levels in Binary Tree,Average of Levels in Binary Tree,tree,19:30:28,19:33:43,0:03:15,10:30:28,,,,
 ,0.1447164414,https://leetcode.com/problems/remove-element,Remove Element,Remove Element,two pointers,19:33:47,20:02:16,0:28:29,10:33:47,,,,
+
 ,0.1290686641,https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array,Find All Numbers Disappeared in an Array,Find All Numbers Disappeared in an Array,hash,20:02:25,20:03:48,0:01:23,11:02:25,,,,
+
+
 ,0.1237648281,https://leetcode.com/problems/implement-strstr,Implement strStr(),Implement strStr(),string,20:03:52,20:09:39,0:05:47,11:03:52,,,,
 ,0.1156414306,https://leetcode.com/problems/invert-binary-tree,Invert Binary Tree,Invert Binary Tree,tree,20:09:44,20:15:26,0:05:42,11:09:44,,,,
-,0.1045633829,https://leetcode.com/problems/closest-binary-search-tree-value,Closest Binary Search Tree Value,Closest Binary Search Tree Value,tree,20:15:37,20:22:33,0:06:56,11:15:37,,,,
+
 ,0.09487528483,https://leetcode.com/problems/squares-of-a-sorted-array,Squares of a Sorted Array,Squares of a Sorted Array,two pointers,20:22:38,20:25:42,0:03:04,11:22:38,,,,
 ,0.08389145664,https://leetcode.com/problems/jewels-and-stones,Jewels and Stones,Jewels and Stones,hash,20:25:51,20:27:06,0:01:14,11:25:51,,,,
-,0.08265924312,https://leetcode.com/problems/remove-duplicates-from-sorted-list,Remove Duplicates from Sorted List,Remove Duplicates from Sorted List,linked list,20:27:12,20:33:27,0:06:15,11:27:12,,,,
+
 ,0.08128008206,https://leetcode.com/problems/first-unique-character-in-a-string,First Unique Character in a String,First Unique Character in a String,hash,20:33:30,20:35:29,0:01:59,11:33:30,,,,
 ,0.06980116512,https://leetcode.com/problems/ransom-note,Ransom Note,Ransom Note,hash,20:35:32,20:40:40,0:05:07,11:35:32,,,,
 ,0.06658292792,https://leetcode.com/problems/fizz-buzz,Fizz Buzz,Fizz Buzz,math,20:40:52,20:43:25,0:02:33,11:40:52,,,,
