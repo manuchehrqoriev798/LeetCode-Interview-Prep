@@ -1,5 +1,5 @@
 learned: divmod(), count(), Counter, split(), bisect,  Python evaluates conditions from left to right, Counter(nums).most_common(1)[0][0], strip,  d[char] = d.get(char, 0) + 1
-
+return word.isupper() or word.islower() or word.istitle() (word = word.capitalize())), 
 Need to learn: recursion, dictKeyAndValues, enumerate(num), bfs, dfs, def ordertraversal(), f"", dp = [0] * len(nums, 
 
 ,0.9734864135,https://leetcode.com/problems/counting-bits,Counting Bits,Counting Bits,bitwise,9:33:57,9:42:02,0:08:04,0:33:57,,,,
@@ -50,10 +50,10 @@ Need to learn: recursion, dictKeyAndValues, enumerate(num), bfs, dfs, def ordert
 ,0.09487528483,https://leetcode.com/problems/squares-of-a-sorted-array,Squares of a Sorted Array,Squares of a Sorted Array,two pointers,20:22:38,20:25:42,0:03:04,11:22:38,,,,
 ,0.08389145664,https://leetcode.com/problems/jewels-and-stones,Jewels and Stones,Jewels and Stones,hash,20:25:51,20:27:06,0:01:14,11:25:51,,,,
 
-,0.08128008206,https://leetcode.com/problems/first-unique-character-in-a-string,First Unique Character in a String,First Unique Character in a String,hash,20:33:30,20:35:29,0:01:59,11:33:30,,,,
 ,0.06980116512,https://leetcode.com/problems/ransom-note,Ransom Note,Ransom Note,hash,20:35:32,20:40:40,0:05:07,11:35:32,,,,
-,0.06658292792,https://leetcode.com/problems/fizz-buzz,Fizz Buzz,Fizz Buzz,math,20:40:52,20:43:25,0:02:33,11:40:52,,,,
+
 ,0.06484449267,https://leetcode.com/problems/fibonacci-number,Fibonacci Number,Fibonacci Number,dp,20:43:31,20:44:47,0:01:16,11:43:31,,,,
+
 ,0.06216767042,https://leetcode.com/problems/detect-capital,Detect Capital,Detect Capital,string,20:44:55,20:47:25,0:02:31,11:44:55,,,,
 ,0.04831085622,https://leetcode.com/problems/happy-number,Happy Number,Happy Number,hash,,,,,,,,
 ,0.007832160334,https://leetcode.com/problems/intersection-of-two-arrays-ii,Intersection of Two Arrays II,Intersection of Two Arrays II,hash,,,,,,,,
