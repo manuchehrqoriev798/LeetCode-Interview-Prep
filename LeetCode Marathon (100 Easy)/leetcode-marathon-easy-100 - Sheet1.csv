@@ -2,17 +2,7 @@ learned: divmod(), count(), Counter, split(), bisect,  Python evaluates conditio
 return word.isupper() or word.islower() or word.istitle() (word = word.capitalize())), 
 Need to learn: recursion, dictKeyAndValues, enumerate(num), bfs, dfs, def ordertraversal(), f"", dp = [0] * len(nums), 
 
-Data Structures withe their properties: 
-1. Lists: ordered, mutabl, dublicates allowe, my_list = [1, 2, 3, 4, 5]
-2. Tuples: ordered, immutable, dublicates allow, my_tuples = [1, 2, 3, 4, 5]
-3. Dictionaries: unordered, mutable, no dublicates 
-4. Sets: ...
-5. Strings...
-6. Array
-7. Stacks: impllements Last in last outs data strucutre. elementes added to the top ard removed form hte top
-8. Queues: implements first in first oyt data strucutre. emlements added to the end and removed from the front
-9. Deque: support appedn and pop from both side
-10. linkked lists: ordered, efficient in insertiona dn deleting, 
+
 
 
 
