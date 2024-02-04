@@ -21,7 +21,7 @@
 ,0.6591880121,https://leetcode.com/problems/add-two-numbers,Add Two Numbers,Add Two Numbers,linked list,14:43:13,14:54:46,0:11:33,5:43:13,,,,
 ,0.6544093025,https://leetcode.com/problems/validate-binary-search-tree,Validate Binary Search Tree,Validate Binary Search Tree,tree,14:55:20,15:09:07,0:13:47,5:55:20,,,,
 ,0.6426891933,https://leetcode.com/problems/diameter-of-binary-tree,Diameter of Binary Tree,Diameter of Binary Tree,tree,15:09:07,15:24:47,0:15:40,6:09:07,,,,
-d
+
 ,0.6337544763,https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal,Binary Tree Zigzag Level Order Traversal,Binary Tree Zigzag Level Order Traversal,tree,15:24:55,15:37:54,0:12:59,6:24:55,,,,
 ,0.6332502303,https://leetcode.com/problems/subsets,Subsets,Subsets,backtracking,15:47:52,15:57:53,0:10:01,6:47:52,,,,
 ,0.6095285329,https://leetcode.com/problems/set-matrix-zeroes,Set Matrix Zeroes,Set Matrix Zeroes,array,15:58:56,16:17:02,0:18:06,6:58:56,,,,
@@ -45,7 +45,7 @@ d
 ,0.2608756241,https://leetcode.com/problems/maximum-subarray,Maximum Subarray,Maximum Subarray,dp,20:41:17,20:48:29,0:07:11,11:41:17,,,,
 ,0.2276962237,https://leetcode.com/problems/merge-intervals,Merge Intervals,Merge Intervals,sorting,,,,,,,,
 ,0.2218486572,https://leetcode.com/problems/sort-colors,Sort Colors,Sort Colors,two pointers,,,,,,,,
-,0.1718047412,https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array,Find First and Last Position of Element in Sorted Array,Find First and Last Position of Element in Sorted Array,binary search,,,,,,,,
+,0.1718047412,https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array, Find First and Last Position of Element in Sorted Array,Find First and Last Position of Element in Sorted Array,binary search,,,,,,,,
 ,0.1637261573,https://leetcode.com/problems/number-of-islands,Number of Islands,Number of Islands,dfs,,,,,,,,
 ,0.1353271677,https://leetcode.com/problems/remove-nth-node-from-end-of-list,Remove Nth Node From End of List,Remove Nth Node From End of List,linked list,,,,,,,,
 ,0.09543487429,https://leetcode.com/problems/permutations,Permutations,Permutations,backtracking,,,,,,,,
