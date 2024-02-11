@@ -12,12 +12,6 @@ I believe that I can do it !
 
 
 #TODO list:
-From 27th to 29th: Medium Marathone
-From 27th to 31th: Tree + Recursion, repetition of all stuff
-From february: Small Pool 
-From february:  Big Pool
-Fucking Graph:
-
 Open source contribution 
 
 

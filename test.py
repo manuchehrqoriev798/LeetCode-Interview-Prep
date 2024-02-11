@@ -1,25 +1,37 @@
-import decimal
+def solve(pos, dir, idx, commands):
+    if idx == len(commands):
+        return {pos}
 
-def binary_split(a, b):
-    if b == a + 1:
-        Pab = -(6*a - 5)*(2*a - 1) * (6*a - 1)
-        Qab = 10939058860032000 * a**3
-        Rab = Pab * (545140134*a + 13591409)
-    else:
-        m = (a + b) // 2
-        Pam, Qam, Ram = binary_split(a, m)
-        Pmb, Qmb, Rmb = binary_split(m, b)
-        Pab = Pam * Pmb
-        Qab = Qam * Qmb
-        Rab = Qmb * Ram + Pam * Rmb
-    return Pab, Qab, Rab
+    positions = set()
 
-def chudnovsky(n):
-    P1n, Q1n, R1n = binary_split(1, n)
-    return (426880 * decimal.Decimal(10005).sqrt() * Q1n) / (13591409*Q1n + R1n)
+    if commands[idx] == 'F':
+        positions |= solve(pos + dir, dir, idx + 1, commands)
+        positions |= solve(pos - dir, -dir, idx + 1, commands)
+    elif commands[idx] == 'R':
+        positions |= solve(pos, -dir, idx + 1, commands)
+        positions |= solve(pos, dir, idx + 1, commands)  # Allow staying still after turning
+    else:  # 'L'
+        positions |= solve(pos, dir, idx + 1, commands)
+        positions |= solve(pos, -dir, idx + 1, commands)  # Allow staying still after turning
 
-decimal.getcontext().prec = 100000 # Set the precision you want
-print(chudnovsky(2))  # Test the function
+    return positions
 
+def count_possible_positions(commands):
+    positions = set()
 
+    for i in range(len(commands)):
+        original_command = commands[i]
+        for c in ['F', 'L', 'R']:
+            if c != original_command:
+                modified_commands = commands[:i] + c + commands[i+1:]
+                positions |= solve(0, 1, 0, modified_commands)
 
+    positions.discard(0)
+
+    return len(positions)
+
+# Input reading and function call
+N = int(input())
+commands = input().strip()
+
+print(count_possible_positions(commands))
