@@ -1,44 +1,4 @@
-
-# It should be 4 because of because there are only 4 uinqe position where player can stay: (0,-1,2,1)
-# FLF 0
-# LLF -1
-# RFF 2
-# RRF 1
-# RLL 0
-# RLR 0
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+2024
 
 # import java.io.BufferedReader;
 # import java.io.IOException;
