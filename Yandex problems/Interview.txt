@@ -1,9 +1,0 @@
-Interview Lifehacks:
-1. Read question
-2. Ask question if you have.
-3. Ask edgcases
-4. Give an example of testcase and be sure that you understood.
-5. 
-
-
-10. Ask question in the end.
