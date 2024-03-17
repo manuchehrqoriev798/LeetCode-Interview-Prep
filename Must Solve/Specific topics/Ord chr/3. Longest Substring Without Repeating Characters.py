@@ -1,3 +1,52 @@
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        max_length = 0
+        left = 0
+        char_index_map = [-1] * 128  
+        
+        for right in range(len(s)):
+            index = ord(s[right])  
+            
+            if char_index_map[index] >= left:
+                left = char_index_map[index] + 1
+
+            char_index_map[index] = right
+            max_length = max(max_length, right - left + 1)
+
+        return max_length
+
+
+
+
+
+
+
+
+
+
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        l, r = 0, 0
+        hashset = set()
+        maxLength = 0
+        while r < len(s):
+            if s[r] not in hashset:
+                hashset.add(s[r])
+                r += 1
+                maxLength = max(maxLength, r - l)
+            else:
+                hashset.remove(s[l])
+                l += 1
+        
+        return maxLength
+
+
+
+
+
+
+
+
 class Solution(object):
     def lengthOfLongestSubstring(self, s):
         count = 0
@@ -16,7 +65,6 @@ class Solution(object):
             r += 1
 
         return count
-
 
 
 
