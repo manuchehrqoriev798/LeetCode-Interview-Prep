@@ -10,6 +10,29 @@ class Solution:
                 hashmap[char] = count
                 count += 1
             
+            res.append(hashmap[char])
+        
+        return res
+        
+    def isIsomorphic(self, s, t):
+        return self.convertString(s) == self.convertString(t)
+
+
+
+
+
+class Solution:
+    def convertString(self, s: str) -> str:
+        hashmap = {}
+
+        res = []
+        count = 1
+
+        for char in s:
+            if char not in hashmap:
+                hashmap[char] = count
+                count += 1
+            
             res.append(str(hashmap[char]))
         
         return "".join(res)
