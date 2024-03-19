@@ -195,3 +195,83 @@ print(merge_sorted_arrays(arr1, arr2))
 # print(shortest_path('xoooyxx'))  
 
 
+
+
+
+
+
+
+
+
+
+
+# # 1 Arisbek problem
+# def product_except_self(nums):
+#     n = len(nums)
+#     result = [1] * n
+#     left_product = 1
+#     right_product = 1
+#     for i in range(n):
+#         result[i] *= left_product
+#         left_product *= nums[i]
+#     for i in range(n - 1, -1, -1):
+#         result[i] *= right_product
+#         right_product *= nums[i]
+#     return result
+
+# print(product_except_self([1, 2, 3, 4]))
+
+# # 2 Arisbek problem
+# def vertical_line_reflection(points):
+#     point_set = set()
+#     min_x = float('inf')
+#     max_x = float('-inf')
+#     for x, y in points:
+#         point_set.add((x, y))
+#         min_x = min(min_x, x)
+#         max_x = max(max_x, x)
+#     x_sum = min_x + max_x
+#     for x, y in points:
+#         if (x_sum - x, y) not in point_set:
+#             return False
+#     return True
+
+# print(vertical_line_reflection([[1, 2], [2, 2], [3, 2]]))
+
+# # 3 Arisbek problem
+# def subarray_sum(nums, target):
+#     sum_map = {}
+#     current_sum = 0
+#     for i, num in enumerate(nums):
+#         current_sum += num
+#         if current_sum - target in sum_map:
+#             return [sum_map[current_sum - target], i]
+#         sum_map[current_sum] = i + 1
+#     return []
+
+# print(subarray_sum([1, 3, 2, 6], 5))
+
+# # 4 Arisbek problem
+# def summarize_ranges(nums):
+#     ranges = []
+#     i = 0
+#     while i < len(nums):
+#         j = i
+#         while j + 1 < len(nums) and nums[j + 1] == nums[j] + 1:
+#             j += 1
+#         if i == j:
+#             ranges.append(str(nums[i]))
+#         else:
+#             ranges.append(f"{nums[i]}-{nums[j]}")
+#         i = j + 1
+#     return ','.join(ranges)
+
+# print(summarize_ranges([1, 3, 2, 6]))
+
+
+
+
+
+
+
+
