@@ -22,6 +22,7 @@ class Solution:
 
 
 
+
 # # if instead of length it asks for indexes:
 # class Solution:
 #     def partitionLabels(self, s: str) -> List[int]:

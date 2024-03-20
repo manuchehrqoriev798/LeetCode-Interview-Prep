@@ -57,3 +57,14 @@ def longest_substring_with_k_distinct_characters(s, k):
 s = "eceba"
 k = 2
 print(longest_substring_with_k_distinct_characters(s, k))  # Output: 3
+
+
+
+
+
+
+
+
+
+
+
