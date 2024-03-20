@@ -1,0 +1,51 @@
+def costSavings(numCities, flights):
+    # Create a 2D array to store the minimum cost to reach each city from any other city
+    minCost = [[float('inf')] * numCities for _ in range(numCities)]
+    
+    # Update the minimum cost based on provided flights
+    for flight in flights:
+        minCost[flight['from']][flight['to']] = min(minCost[flight['from']][flight['to']], flight['cost'])
+        minCost[flight['to']][flight['from']] = min(minCost[flight['to']][flight['from']], flight['cost'])
+    
+    # Floyd-Warshall algorithm to find the minimum cost between every pair of cities
+    for k in range(numCities):
+        for i in range(numCities):
+            for j in range(numCities):
+                if minCost[i][k] != float('inf') and minCost[k][j] != float('inf'):
+                    minCost[i][j] = min(minCost[i][j], minCost[i][k] + minCost[k][j])
+    
+    # Calculate the total operational cost before optimization
+    totalCostBefore = sum(minCost[i][j] for i in range(numCities) for j in range(i + 1, numCities))
+    
+    # Calculate the total operational cost after optimization
+    totalCostAfter = 0
+    for i in range(numCities):
+        for j in range(i + 1, numCities):
+            # Remove the flight between city i and city j
+            minCost[i][j] = minCost[j][i] = float('inf')
+            
+            # Re-run Floyd-Warshall to find new minimum costs after removal
+            for k in range(numCities):
+                for m in range(numCities):
+                    for n in range(numCities):
+                        if minCost[m][k] != float('inf') and minCost[k][n] != float('inf'):
+                            minCost[m][n] = min(minCost[m][n], minCost[m][k] + minCost[k][n])
+            
+            # Update total cost after removing the flight between city i and city j
+            totalCostAfter += sum(minCost[m][n] for m in range(numCities) for n in range(m + 1, numCities))
+            
+            # Restore the removed flights for next iteration
+            minCost[i][j] = minCost[j][i] = float('inf')
+    
+    # Calculate and return the maximum possible savings
+    return totalCostBefore - totalCostAfter
+
+# Example usage:
+numCities = 4
+flights = [
+    {'from': 0, 'to': 1, 'cost': 3},
+    {'from': 2, 'to': 0, 'cost': 1},
+    {'from': 2, 'to': 3, 'cost': 1},
+    {'from': 1, 'to': 3, 'cost': 2},
+]
+print(costSavings(numCities, flights))  # Output should be 3

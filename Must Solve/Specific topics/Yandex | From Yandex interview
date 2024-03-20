@@ -1,0 +1,68 @@
+import re
+
+def best_hit(text, query):
+    # Normalize text and query to lowercase
+    text = text.lower()
+    query = query.lower()
+    
+    # Remove non-alphabetic characters from text and query
+    text = re.sub(r'[^a-z]+', ' ', text)
+    query = re.sub(r'[^a-z]+', ' ', query)
+    
+    # Split text and query into lists of words
+    text_words = text.split()
+    query_words = query.split()
+    
+    # Count occurrences of each word in query
+    query_counts = {word: query_words.count(word) for word in set(query_words)}
+    
+    # Initialize variables to track shortest substring
+    min_length = float('inf')
+    min_start = -1
+    min_end = -1
+    
+    # Initialize variables for sliding window technique
+    window_start = 0
+    window_counts = {}
+    total_matched = 0
+    
+    # Iterate over text words
+    for window_end, word in enumerate(text_words):
+        # Skip non-query words
+        if word not in query_counts:
+            continue
+        
+        # Update window counts
+        window_counts[word] = window_counts.get(word, 0) + 1
+        
+        # Update total matched count
+        if window_counts[word] <= query_counts[word]:
+            total_matched += 1
+        
+        # If all query words are matched
+        if total_matched == len(query_words):
+            # Shrink the window
+            while text_words[window_start] not in query_counts or window_counts[text_words[window_start]] > query_counts[text_words[window_start]]:
+                if text_words[window_start] in query_counts:
+                    window_counts[text_words[window_start]] -= 1
+                window_start += 1
+            
+            # Update minimum length substring
+            if min_length > window_end - window_start + 1:
+                min_length = window_end - window_start + 1
+                min_start = window_start
+                min_end = window_end
+                
+    # Return the indices of the shortest substring containing all query words
+    return [min_start, min_end] if min_start != -1 else []
+
+# Example usage:
+print(best_hit('some,random-text', 'random1text'))  # Output: [5, 15]
+print(best_hit('MATCHES', 'matches'))  # Output: [0, 6]
+print(best_hit('some,random-text', 'random1tex'))  # Output: []
+print(best_hit('a b... a', 'b a'))  # Output: [0, 2]
+print(best_hit('Oh, ok then!', 'OK. ...Oh.'))  # Output: [0, 5]
+print(best_hit('that is fine, totally', 'Fine, FINE'))  # Output: []
+print(best_hit('that is fine, totally fine.', 'Fine, FINE'))  # Output: [8, 25]
+print(best_hit('a b a... a', 'a a'))  # Output: [0, 4]
+print(best_hit('a a', 'a'))  # Output: [0, 0]
