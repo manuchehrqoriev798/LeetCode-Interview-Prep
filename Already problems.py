@@ -72,33 +72,6 @@ arr2 = [3, 4, 5]
 result = merge_sorted_arrays(arr1, arr2)
 
 
-def merge_sorted_arrays(arr1, arr2):
-    arr1 = arr1 + len(arr2) * [0]
-    l, r = len(arr1) - len(arr2), len(arr2) - 1
-    idx = len(arr1) - 1
-    
-    while l >= 0 and r >= 0:
-        if arr1[l] < arr2[r]:
-            arr1[idx] = arr2[r]
-            idx -= 1
-            r -= 1
-        else:
-            arr1[idx] = arr1[l]
-            idx -= 1
-            l -= 1
-
-    while r >= 0:
-        arr1[idx] = arr2[r]
-        idx -= 1
-        r -= 1
-
-    return arr1
-
-arr1 = [1, 2, 3]
-arr2 = [3, 4, 5]
-print(merge_sorted_arrays(arr1, arr2))
-
-
 
 
 
