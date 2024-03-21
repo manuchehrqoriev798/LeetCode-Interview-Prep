@@ -1,18 +1,27 @@
-res = []
-l, r = 0, 0
-while l < len(s1) and r < len(s2):
-    if s1[l] > s2[r]:
-        res.append(s2[r])
-        r += 1
-    else:
-        res.append(s1[l])
-        l += 1
-    
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
+        dummy = ListNode()
 
-if not s1 and s2:
-    res.append(s2)
+        cur = dummy
 
-if not s2 and s1:
-    res.append(s1)
-
-return res
+        while list1 and list2:
+            if list1.val < list2.val:
+                cur.next = list1
+                list1 = list1.next
+            else:
+                cur.next = list2
+                list2 = list2.next
+            
+            cur = cur.next
+        
+        if not list1:
+            cur.next = list2
+        if not list2:
+            cur.next = list1
+        
+        return dummy.next

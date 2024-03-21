@@ -1,15 +1,37 @@
 class Solution(object):
     def maxSubArray(self, nums):
         maxSum = float("-inf")
-        cur = 0
-
+        
+        total = 0
         for num in nums:
-            cur += num
+            total += num
 
-            if cur > maxSum:
-                maxSum = cur
+            if total > maxSum:
+                maxSum = total
             
-            if cur < 0:
-                cur = 0
+            if total < 0:
+                total = 0
         
         return maxSum
+
+
+
+
+
+
+
+class Solution:
+    def maxSubArray(self, nums: List[int]) -> int:
+        minimum = min(nums)
+
+        maximum = minimum
+        total = 0
+
+        for num in nums:
+            total += num
+            
+            maximum = max(maximum, total)
+        
+            if total < 0:
+                total = 0
+        return maximum

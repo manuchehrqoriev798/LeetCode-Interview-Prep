@@ -11,3 +11,4 @@ class Solution(object):
             n2 = 10*n2 + hashmap[j]
         
         return str(n1 * n2)
+
