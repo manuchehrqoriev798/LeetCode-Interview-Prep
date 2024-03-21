@@ -197,21 +197,36 @@ min_distance(arr, x, y)
 
 
 # # 2 Arisbek problem
-# def vertical_line_reflection(points):
-#     point_set = set()
-#     min_x = float('inf')
-#     max_x = float('-inf')
-#     for x, y in points:
-#         point_set.add((x, y))
-#         min_x = min(min_x, x)
-#         max_x = max(max_x, x)
-#     x_sum = min_x + max_x
-#     for x, y in points:
-#         if (x_sum - x, y) not in point_set:
+# def isReflected(nums):
+#     if not nums:
+#         return False
+    
+#     minValue = float("inf")
+#     maxValue = float("-inf")
+    
+#     seen = {}
+    
+#     for x, y in nums:
+#         minValue = min(minValue, x)
+#         maxValue = max(maxValue, x)
+#         if (x, y) in seen:
+#             seen[(x, y)] += 1
+#         else:
+#             seen[(x, y)] = 1
+    
+#     total = minValue + maxValue
+    
+#     for x, y in nums:
+#         if (total - x, y) not in seen or seen[(total - x, y)] == 0:
 #             return False
+#         seen[(total - x, y)] -= 1
+    
 #     return True
 
-# print(vertical_line_reflection([[1, 2], [2, 2], [3, 2]]))
+# # Example 1
+# nums1 = [(1, 1), (1, 1), (1, 1), (4, 1), (4, 1)]
+# print(isReflected(nums1))  # Output: True
+
 
 
 
