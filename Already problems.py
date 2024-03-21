@@ -148,21 +148,24 @@ print(f"Number of unique subsequences: {answer}")
 
 
 # 2 Arthur problem
-def shortest_path(s):
-    x_index = -1
-    y_index = -1
-    for i, char in enumerate(s):
-        if char == 'x':
-            x_index = i
-        elif char == 'y' and x_index != -1:
-            y_index = i
-            break
-    if x_index != -1 and y_index != -1 and 'x' not in s[x_index:y_index]:
-        return y_index - x_index + 1
-    else:
-        return 0
+def min_distance(arr, x, y):
+    min_dist = float('inf')
+    prev_index = -1
 
-print(shortest_path('xoooyxx'))  
+    for i in range(len(arr)):
+        if arr[i] == x or arr[i] == y:
+            if prev_index != -1 and arr[prev_index] != arr[i]:
+                min_dist = min(min_dist, i - prev_index)
+            prev_index = i
+
+    return min_dist
+
+arr = [1, 2, 3, 4, 5]
+x = 2
+y = 4
+# Expected output: 2 (Distance between indices of x and y is 2)
+
+min_distance(arr, x, y)
 
 
 
