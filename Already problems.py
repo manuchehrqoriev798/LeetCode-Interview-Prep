@@ -76,37 +76,36 @@ result = merge_sorted_arrays(arr1, arr2)
 
 
 
-# # Ilkhom 4th problem. I did not get quite. If you understood it can you help.
-# def intersection(arr1, arr2):
-#     res = []
-#     d = {}
-#     l, r = 0, 0
-#     cur = 0
-    
-#     while l < len(arr1) and r < len(arr2):
-#         if arr1[l] not in d:
-#             d[arr1[l]] = 1
-#         else:
-#             cur += 1
+# # Ilkhom 4th problem..
+class Solution:
+    def findThePrefixCommonArray(self, A: List[int], B: List[int]) -> List[int]:
+        d = {}
+        ans = []
+        count = 0
+
+        for i in range(len(A)):
+            if A[i] not in d:
+                d[A[i]] = 1
+            else:
+                d[A[i]] += 1
+            
+            if d[A[i]] == 2:
+                count += 1
+            
+            if B[i] not in d:
+                d[B[i]] = 1
+            else:
+                d[B[i]] += 1
+            
+            if d[B[i]] == 2:
+                count += 1  
+            
+            ans.append(count)
         
-#         if arr2[r] not in d:
-#             d[arr2[r]] = 1
-#         else:
-#             cur += 1
-        
-#         res.append(cur)
-#         l += 1
-#         r += 1
-        
-    
-#     return res
+        return ans 
     
     
 
-# array1 = [1, 2, 3]
-# array2 = [1, 2, 3]
-# result = intersection(array1, array2)
-# print(result)
 
 
 
@@ -117,55 +116,53 @@ result = merge_sorted_arrays(arr1, arr2)
 
 
 
+# 1 Artur problem
+def count_unique_subsequences(s):
+    hashset = set()
+    l, r = 0, 0  
+    count = 0
+    cur = 0
+    while r < len(s):
+        if s[r] not in hashset:
+            hashset.add(s[r])
+            cur += 1
+            count += cur
+            r += 1
+        else:
+            while s[l] != s[r]:
+                hashset.remove(s[l]) 
+                cur -= 1
+                l += 1
+            hashset.remove(s[l])  
+            cur -= 1
+            l += 1
+            count += cur  
+    return count
 
-
-# # 1 Artur problem
-# def count_unique_subsequences(s):
-#     hashset = set()
-#     l, r = 0, 0  
-#     count = 0
-#     cur = 0
-#     while r < len(s):
-#         if s[r] not in hashset:
-#             hashset.add(s[r])
-#             cur += 1
-#             count += cur
-#             r += 1
-#         else:
-#             while s[l] != s[r]:
-#                 hashset.remove(s[l]) 
-#                 cur -= 1
-#                 l += 1
-#             hashset.remove(s[l])  
-#             cur -= 1
-#             l += 1
-#             count += cur  
-#     return count
-
-# s = "abca"
-# answer = count_unique_subsequences(s)
-# print(f"Number of unique subsequences: {answer}")  
+s = "abca"
+answer = count_unique_subsequences(s)
+print(f"Number of unique subsequences: {answer}")  
 
 
 
 
 
-# # 2 Arthur problem
-# def shortest_path(s):
-#     x_index = -1
-#     y_index = -1
-#     for i, char in enumerate(s):
-#         if char == 'x':
-#             x_index = i
-#         elif char == 'y' and x_index != -1:
-#             y_index = i
-#             break
-#     if x_index != -1 and y_index != -1 and 'x' not in s[x_index:y_index]:
-#         return y_index - x_index + 1
-#     else:
-#         return 0
+# 2 Arthur problem
+def shortest_path(s):
+    x_index = -1
+    y_index = -1
+    for i, char in enumerate(s):
+        if char == 'x':
+            x_index = i
+        elif char == 'y' and x_index != -1:
+            y_index = i
+            break
+    if x_index != -1 and y_index != -1 and 'x' not in s[x_index:y_index]:
+        return y_index - x_index + 1
+    else:
+        return 0
 
-# print(shortest_path('xoooyxx'))  
+print(shortest_path('xoooyxx'))  
 
 
 
@@ -194,6 +191,8 @@ result = merge_sorted_arrays(arr1, arr2)
 
 # print(product_except_self([1, 2, 3, 4]))
 
+
+
 # # 2 Arisbek problem
 # def vertical_line_reflection(points):
 #     point_set = set()
@@ -211,35 +210,42 @@ result = merge_sorted_arrays(arr1, arr2)
 
 # print(vertical_line_reflection([[1, 2], [2, 2], [3, 2]]))
 
-# # 3 Arisbek problem
-# def subarray_sum(nums, target):
-#     sum_map = {}
-#     current_sum = 0
-#     for i, num in enumerate(nums):
-#         current_sum += num
-#         if current_sum - target in sum_map:
-#             return [sum_map[current_sum - target], i]
-#         sum_map[current_sum] = i + 1
-#     return []
+
+
+
+
+# 3 Arisbek problem
+def subarray_sum(nums, target):
+    d = {}
+    total = 0
+    for i, num in enumerate(nums):
+        total += num
+        if total - target in d:
+            return [d[total - target], i]
+        d[total] = i + 1
+    return []
+
+
+
 
 # print(subarray_sum([1, 3, 2, 6], 5))
 
-# # 4 Arisbek problem
-# def summarize_ranges(nums):
-#     ranges = []
-#     i = 0
-#     while i < len(nums):
-#         j = i
-#         while j + 1 < len(nums) and nums[j + 1] == nums[j] + 1:
-#             j += 1
-#         if i == j:
-#             ranges.append(str(nums[i]))
-#         else:
-#             ranges.append(f"{nums[i]}-{nums[j]}")
-#         i = j + 1
-#     return ','.join(ranges)
+# 4 Arisbek problem
+def summarize_ranges(nums):
+    ranges = []
+    i = 0
+    while i < len(nums):
+        j = i
+        while j + 1 < len(nums) and nums[j + 1] == nums[j] + 1:
+            j += 1
+        if i == j:
+            ranges.append(str(nums[i]))
+        else:
+            ranges.append(f"{nums[i]}-{nums[j]}")
+        i = j + 1
+    return ','.join(ranges)
 
-# print(summarize_ranges([1, 3, 2, 6]))
+print(summarize_ranges([1, 3, 2, 6]))
 
 
 
