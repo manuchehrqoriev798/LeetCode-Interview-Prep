@@ -118,31 +118,25 @@ class Solution:
 
 # 1 Artur problem
 def count_unique_subsequences(s):
-    hashset = set()
+    hashmap = {}
     l, r = 0, 0  
     count = 0
-    cur = 0
     while r < len(s):
-        if s[r] not in hashset:
-            hashset.add(s[r])
-            cur += 1
-            count += cur
-            r += 1
+        if s[r] not in hashmap:
+            hashmap[s[r]] = 1
+            count += r - l + 1
         else:
-            while s[l] != s[r]:
-                hashset.remove(s[l]) 
-                cur -= 1
+            hashmap[s[r]] += 1
+            while hashmap[s[r]] != 1:
+                hashmap[s[l]] -= 1
                 l += 1
-            hashset.remove(s[l])  
-            cur -= 1
-            l += 1
-            count += cur  
+            count += r - l + 1
+        r += 1
     return count
 
-s = "abca"
+s = "abcb"
 answer = count_unique_subsequences(s)
-print(f"Number of unique subsequences: {answer}")  
-
+print(f"Number of unique subsequences: {answer}")
 
 
 
@@ -178,54 +172,54 @@ min_distance(arr, x, y)
 
 
 
-# # 1 Arisbek problem
-# def product_except_self(nums):
-#     n = len(nums)
-#     result = [1] * n
-#     left_product = 1
-#     right_product = 1
-#     for i in range(n):
-#         result[i] *= left_product
-#         left_product *= nums[i]
-#     for i in range(n - 1, -1, -1):
-#         result[i] *= right_product
-#         right_product *= nums[i]
-#     return result
+# 1 Arisbek problem
+def product_except_self(nums):
+    n = len(nums)
+    result = [1] * n
+    left_product = 1
+    right_product = 1
+    for i in range(n):
+        result[i] *= left_product
+        left_product *= nums[i]
+    for i in range(n - 1, -1, -1):
+        result[i] *= right_product
+        right_product *= nums[i]
+    return result
 
-# print(product_except_self([1, 2, 3, 4]))
+print(product_except_self([1, 2, 3, 4]))
 
 
 
-# # 2 Arisbek problem
-# def isReflected(nums):
-#     if not nums:
-#         return False
+# 2 Arisbek problem
+def isReflected(nums):
+    if not nums:
+        return False
     
-#     minValue = float("inf")
-#     maxValue = float("-inf")
+    minValue = float("inf")
+    maxValue = float("-inf")
     
-#     seen = {}
+    seen = {}
     
-#     for x, y in nums:
-#         minValue = min(minValue, x)
-#         maxValue = max(maxValue, x)
-#         if (x, y) in seen:
-#             seen[(x, y)] += 1
-#         else:
-#             seen[(x, y)] = 1
+    for x, y in nums:
+        minValue = min(minValue, x)
+        maxValue = max(maxValue, x)
+        if (x, y) in seen:
+            seen[(x, y)] += 1
+        else:
+            seen[(x, y)] = 1
     
-#     total = minValue + maxValue
+    total = minValue + maxValue
     
-#     for x, y in nums:
-#         if (total - x, y) not in seen or seen[(total - x, y)] == 0:
-#             return False
-#         seen[(total - x, y)] -= 1
+    for x, y in nums:
+        if (total - x, y) not in seen or seen[(total - x, y)] == 0:
+            return False
+        seen[(total - x, y)] -= 1
     
-#     return True
+    return True
 
-# # Example 1
-# nums1 = [(1, 1), (1, 1), (1, 1), (4, 1), (4, 1)]
-# print(isReflected(nums1))  # Output: True
+# Example 1
+nums1 = [(1, 1), (1, 1), (1, 1), (4, 1), (4, 1)]
+print(isReflected(nums1))  # Output: True
 
 
 

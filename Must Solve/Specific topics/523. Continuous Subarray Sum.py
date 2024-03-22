@@ -18,4 +18,3 @@ class Solution:
                 d[reminder] = index
         
         return False
-            
