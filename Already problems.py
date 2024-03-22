@@ -103,10 +103,6 @@ class Solution:
             ans.append(count)
         
         return ans 
-    
-    
-
-
 
 
 
