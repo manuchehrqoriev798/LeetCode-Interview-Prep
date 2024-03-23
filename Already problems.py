@@ -186,6 +186,9 @@ print(product_except_self([1, 2, 3, 4]))
 
 
 
+
+
+
 # 2 Arisbek problem
 def isReflected(nums):
     if not nums:
