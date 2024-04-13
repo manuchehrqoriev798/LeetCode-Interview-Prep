@@ -265,3 +265,28 @@ print(summarize_ranges([1, 3, 2, 6]))
 
 
 
+
+
+
+
+
+
+
+def find_two_maximums(arr):
+    # Initialize first and second maximums with negative infinity
+    first_max = float('-inf')
+    second_max = float('-inf')
+    
+    # Iterate through the array to find the two maximum values
+    for num in arr:
+        # Update the maximums as needed
+        if num > first_max:
+            # If current number is greater than the first max, update the second max and first max
+            second_max = first_max
+            first_max = num
+        elif num > second_max and num < first_max:
+            # If current number is between first max and second max, update the second max
+            second_max = num
+    
+    # Return the first and second maximum values
+    return first_max, second_max
