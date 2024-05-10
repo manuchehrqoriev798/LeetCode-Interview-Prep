@@ -290,3 +290,33 @@ def find_two_maximums(arr):
     
     # Return the first and second maximum values
     return first_max, second_max
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Two biggest in the array 
+# Test Case
+arr = [3, 6, 8, 2, 10, 7]
+first = float("-inf")
+second = float("-inf")
+
+for i in range(len(arr)):
+    if arr[i] > first:
+        second = first
+        first = arr[i]
+    elif arr[i] > second:
+        second = arr[i]
+
+print(f"The two biggest numbers in the array are: {first} + {second}")
