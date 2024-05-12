@@ -2,6 +2,25 @@ class Solution:
     def numJewelsInStones(self, jewels: str, stones: str) -> int:
         count = 0
 
+        hashset = set()
+
+        for char in jewels:
+            if char not in hashset:
+                hashset.add(char)
+            
+       
+        for char in stones:
+            if char in hashset:
+                count += 1
+        
+        return count
+
+
+
+class Solution:
+    def numJewelsInStones(self, jewels: str, stones: str) -> int:
+        count = 0
+
         hashmap = {}
 
         for char in jewels:
