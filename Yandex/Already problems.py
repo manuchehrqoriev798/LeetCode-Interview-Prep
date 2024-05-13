@@ -320,3 +320,56 @@ for i in range(len(arr)):
         second = arr[i]
 
 print(f"The two biggest numbers in the array are: {first} + {second}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+from collections import deque
+
+class UniqueQueue:
+    def __init__(self):
+        self.queue = deque()
+
+    def add(self, number):
+        if number not in self.queue:
+            self.queue.append(number)
+            print(f"{number} added to the line.")
+        else:
+            print(f"{number} already exists in the line.")
+
+    def check(self, number):
+        if number in self.queue:
+            print(f"{number} is unique in the line.")
+        else:
+            print(f"{number} is not unique in the line.")
+
+# Example usage
+queue = UniqueQueue()
+queue.add(5)
+queue.add(2)
+queue.add(5)  # This should print that 5 already exists
+queue.add(8)
+queue.check(2)  # This should print that 2 is unique
+queue.check(5)  # This should print that 5 is not unique

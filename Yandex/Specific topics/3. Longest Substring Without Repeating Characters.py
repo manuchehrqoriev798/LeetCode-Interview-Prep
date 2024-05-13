@@ -19,11 +19,6 @@ class Solution:
 
 
 
-
-
-
-
-
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         l, r = 0, 0
