@@ -235,11 +235,12 @@ def subarray_sum(nums, target):
             return [d[total - target], i]
         d[total] = i + 1
     return []
-
-
-
-
 # print(subarray_sum([1, 3, 2, 6], 5))
+
+
+
+
+
 
 # 4 Arisbek problem
 def summarize_ranges(nums):
