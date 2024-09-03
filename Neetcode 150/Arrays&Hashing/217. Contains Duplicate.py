@@ -19,3 +19,14 @@ if result:
     print("The list contains duplicates.")
 else:
     print("The list does not contain duplicates.")
+
+
+
+
+
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        if len(set(nums)) == len(nums):
+            return False
+        else:
+            return True

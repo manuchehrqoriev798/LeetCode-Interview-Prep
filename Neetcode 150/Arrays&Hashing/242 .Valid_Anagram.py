@@ -41,3 +41,35 @@ t2 = "world"
 result2 = solution.isAnagram(s2, t2)
 print(f"\nTest case 2: s2 = {s2}, t2 = {t2}")
 print("Result:", result2)  # Expected output: False
+
+
+
+
+
+
+
+
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        if len(s) != len(t):
+            return False
+
+        hashmap1 = {}
+
+        for char in s:
+            if char not in hashmap1:
+                hashmap1[char] = 1
+            else:
+                hashmap1[char] += 1
+        
+        for char in t:
+            if char in hashmap1:
+                hashmap1[char] -= 1
+            else:
+                return False
+        
+        for count in hashmap1.values():
+            if count != 0:
+                return False
+        
+        return True
