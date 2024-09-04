@@ -34,3 +34,31 @@ for index, element in enumerate(num_list):
     my_dict[element] = index
 
 print(result)
+
+
+
+
+
+
+
+
+
+from typing import List
+
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        hashmap = {}
+        for i in range(len(nums)):
+            compliment = target - nums[i]
+            if compliment in hashmap:
+                return [hashmap[compliment], i]
+            hashmap[nums[i]] = i
+        
+
+
+# Test case
+solution = Solution()
+nums = [2, 7, 11, 15]
+target = 9
+result = solution.twoSum(nums, target)
+print(result)  # Expected output: [0, 1]
