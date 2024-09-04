@@ -61,3 +61,29 @@ class Solution:
             postfix *= nums[i]
         
         return res
+
+
+
+
+
+class Solution:
+    def productExceptSelf(self, nums: List[int]) -> List[int]:
+        counter = 0
+        total = 1
+        for i in range(len(nums)):
+            if nums[i] != 0:
+                total = total * nums[i]
+            else:
+                counter += 1
+        
+        res = [1] * len(nums)
+
+        for i in range(len(res)):
+            if counter == 0:
+                res[i] = total // nums[i]
+            elif counter == 1 and nums[i] == 0:
+                res[i] = total 
+            else:
+                res[i] = 0
+        
+        return res
