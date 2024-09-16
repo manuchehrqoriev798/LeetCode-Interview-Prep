@@ -37,6 +37,22 @@ class Solution:
 
 
 
+class Solution:
+    def dailyTemperatures(self, temperatures: List[int]) -> List[int]:
+        n = len(temperatures)
+        stack = [n-1]
+        result = [0] * n
+
+        for i in range(n-2, -1, -1):
+            while stack:
+                if (temperatures[stack[-1]] > temperatures[i]):
+                    break
+                stack.pop()
+            if stack:
+                result[i] = stack[-1] - i
+            stack.append(i)
+        return result
+
 
 
 
